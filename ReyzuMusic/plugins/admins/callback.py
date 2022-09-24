@@ -17,8 +17,6 @@ from ReyzuMusic.utils.database import (is_active_chat,
 from ReyzuMusic.utils.decorators.language import languageCB
 from ReyzuMusic.utils.formatters import seconds_to_min
 from ReyzuMusic.utils.inline.play import (panel_markup_1,
-                                          panel_markup_2,
-                                          panel_markup_3,
                                           stream_markup,
                                           telegram_markup)
 from ReyzuMusic.utils.stream.autoclear import auto_clean
