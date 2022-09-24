@@ -2,14 +2,14 @@ import random
 
 from pyrogram.types import InlineKeyboardButton
 
-    line = "─"
-    circle = "〇"
-
-
 ## After Edits with Timer Bar
 
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
+    
+    line = "─"
+    circle = "〇"
+    
     bar = line*(pos-1)
     bar += circle
     bar += line*(10-len(bar))
