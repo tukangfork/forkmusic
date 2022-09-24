@@ -1,4 +1,4 @@
-import random
+import config
 
 from pyrogram.types import InlineKeyboardButton
 
@@ -232,7 +232,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
                 text=_["CLOSEMENU_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
-        ],
+        ]
     ]
     return buttons
 
@@ -286,14 +286,12 @@ def panel_markup_1(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="⏸", callback_data=f"ADMIN Pause|{chat_id}"
-            ),
-            InlineKeyboardButton(
                 text="▶️",
                 callback_data=f"ADMIN Resume|{chat_id}",
+            ),    
+            InlineKeyboardButton(
+                text="⏸", callback_data=f"ADMIN Pause|{chat_id}"
             ),
-        ],
-        [
             InlineKeyboardButton(
                 text="⏯", callback_data=f"ADMIN Skip|{chat_id}"
             ),
@@ -306,6 +304,8 @@ def panel_markup_1(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
+        ],
+        [
             InlineKeyboardButton(
                 text="🔀 Shuffle",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
