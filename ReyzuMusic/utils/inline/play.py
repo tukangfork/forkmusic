@@ -246,17 +246,18 @@ def panel_markup_1(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="⏸", callback_data=f"ADMIN Pause|{chat_id}"
+                text="🔇", callback_data=f"ADMIN Mute|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="▶️",
-                callback_data=f"ADMIN Resume|{chat_id}",
+                text="🔊",
+                callback_data=f"ADMIN Unmute|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏯", callback_data=f"ADMIN Skip|{chat_id}"
+                text="🔀",
+                callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏹", callback_data=f"ADMIN Stop|{chat_id}"
+                text="🔁", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
@@ -281,18 +282,12 @@ def panel_markup_2(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🔇", callback_data=f"ADMIN Mute|{chat_id}"
+                text="⏮ 10 Seconds",
+                callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🔊",
-                callback_data=f"ADMIN Unmute|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="🔀",
-                callback_data=f"ADMIN Shuffle|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="🔁", callback_data=f"ADMIN Loop|{chat_id}"
+                text="⏭ 10 Seconds",
+                callback_data=f"ADMIN 2|{chat_id}",
             ),
         ],
         [
@@ -315,16 +310,6 @@ def panel_markup_2(_, videoid, chat_id):
 
 def panel_markup_3(_, videoid, chat_id):
     buttons = [
-        [
-            InlineKeyboardButton(
-                text="⏮ 10 Seconds",
-                callback_data=f"ADMIN 1|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="⏭ 10 Seconds",
-                callback_data=f"ADMIN 2|{chat_id}",
-            ),
-        ],
         [
             InlineKeyboardButton(
                 text="⏮ 30 Seconds",
