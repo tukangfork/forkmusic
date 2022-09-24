@@ -273,11 +273,11 @@ def panel_markup_2(_, videoid, chat_id):
                 callback_data=f"ADMIN Unmute|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🔀 Shuffle",
+                text="🔀",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="🔁 Loop", callback_data=f"ADMIN Loop|{chat_id}"
+                text="🔁", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
