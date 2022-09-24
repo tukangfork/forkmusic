@@ -75,8 +75,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
 
 
 
-
-
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
@@ -109,9 +107,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text="⏯",
                 callback_data=f"ADMIN Skip|{chat_id}"
+            ),
             InlineKeyboardButton(
                 text="⏹",
                 callback_data=f"ADMIN Stop|{chat_id}"
+            ),
         ],
         [
             InlineKeyboardButton(
