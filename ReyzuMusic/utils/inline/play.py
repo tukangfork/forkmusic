@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardButton
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     
     line = "─"
-    circle = "〇"
+    circle = "✦"
     
     bar = line*(pos-1)
     bar += circle
