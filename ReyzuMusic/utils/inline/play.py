@@ -3,12 +3,19 @@ import random
 from pyrogram.types import InlineKeyboardButton
 
 selections = [
-    line = "—"
-    circle = "✦"
-
-    bar = line*(pos-1)
-    bar += circle
-    bar += line*(10-len(bar))
+    "▁▄▂▇▄1▅▄▅▃▁",
+    "▁▃▇▂▅2▇▄▅▃▁",
+    "▁▃▁▇▂▅3▄▃▅▁",
+    "▁▃▄▂▄▇4▅▃▅▁",
+    "▁▃▄▂▇5▃▄▅▃▁",
+    "▁▃▁▄6▅▃▇▃▅▁",
+    "▁▇▄▂▅7▄▅▃▄▁",
+    "▁▃▅▇▂8▅▄▃▇▁",
+    "▁▃▅▂▅9▇▁▄▃▁",
+    "▁▇▅▂10▄▃▁▃▁",
+    "▁▃▁▇11▅▁▅▄▃▁",
+    "▁▅▄▇12▅▂▄▇▁",
+    "▁▃▅▂13▇▄▅▃▁",
 ]
 
 
@@ -16,7 +23,7 @@ selections = [
 
 
 def stream_markup_timer(_, videoid, chat_id, played, dur):
-    bar = random.choice(selections)
+    bar = selections
     buttons = [
         [
             InlineKeyboardButton(
