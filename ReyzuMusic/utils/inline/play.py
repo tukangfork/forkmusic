@@ -30,11 +30,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     pos = int(y)
 
     line = "─"
-    circle = "♡"
+    circle = "●"
 
     bar = line*(pos-1)
     bar += circle
-    bar += line*(12-len(bar))
+    bar += line*(11-len(bar))
     buttons = [
         [
             InlineKeyboardButton(
@@ -78,11 +78,11 @@ def telegram_markup_timer(_, chat_id, played, dur):
     pos = int(y)
 
     line = "─"
-    circle = "♡"
+    circle = "●"
 
     bar = line*(pos-1)
     bar += circle
-    bar += line*(12-len(bar))
+    bar += line*(11-len(bar))
     buttons = [
         [
             InlineKeyboardButton(
@@ -108,6 +108,30 @@ def telegram_markup_timer(_, chat_id, played, dur):
 
 def stream_markup(_, videoid, chat_id):
     buttons = [
+        [
+            InlineKeyboardButton(
+                text="🔀 Shuffle",
+                callback_data=f"ADMIN Shuffle|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="🔁 Loop", callback_data=f"ADMIN Loop|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="⏸", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▶️",
+                callback_data=f"ADMIN Resume|{chat_id}",
+            ),
+            InlineKeyboardButton(
+                text="⏯", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="⏹", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
+        ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_2"],
