@@ -1,5 +1,3 @@
-import config
-
 HELP_1 = """👨‍⚖️ **<u>Perintah Admin</u>**
 
 1️⃣ **Perintah Dasar**
