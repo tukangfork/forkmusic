@@ -1,10 +1,8 @@
 import config
 
-HELP_1 = """👨‍⚖️ **await message.reply_text(
-                    _["command_1"].format(config.MUSIC_BOT_NAME),</u>**
+HELP_1 = """👨‍⚖️ **<u>Perintah Admin</u>**
 
-1️⃣ **await message.reply_text(
-                    _["command_2"].format(config.MUSIC_BOT_NAME),**
+1️⃣ **Perintah Dasar**
 
 `/pin loud/notify` - Sematkan pesan senyap atau beritahu anggota.
 `/antich on/off` - Mode anti Channel.
