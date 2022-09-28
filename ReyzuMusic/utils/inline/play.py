@@ -110,7 +110,8 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["start_8"].format(config.MUSIC_BOT_NAME),
+                text=_["Start_8"],
+                format=f"{config.MUSIC_BOT_NAME}",
             ),
         ],
         [
