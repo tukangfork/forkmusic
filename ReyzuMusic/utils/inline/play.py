@@ -111,7 +111,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["start_8"],
-                callback_data=f"PanelMarkup {videoid}|{chat_id}",
+                callback_data=f"PanelMarkup {videoid}|{chat_id}|{config.MUSIC_BOT_NAME}",
             ),
         ],
         [
