@@ -291,7 +291,7 @@ PL_B_13 : "🔁 Loop 3x"
 PL_B_14 : "⏮ 10 Seconds"
 PL_B_15 : "⏭ 10 Seconds"
 PL_B_16 : "⏭ 30 Seconds"
-PL_B_16 : "⏮ 30 Seconds"
+PL_B_17 : "⏮ 30 Seconds"
 
 #Settings
 ST_B_1 : "🔊 Aud Quality"
