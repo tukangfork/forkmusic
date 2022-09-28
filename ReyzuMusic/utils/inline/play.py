@@ -1,6 +1,6 @@
 import config
 
-from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import (InlineKeyboardButton, Message)
 
 
 ## After Edits with Timer Bar
@@ -106,7 +106,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
 ## Inline without Timer Bar
 
 
-def stream_markup(_, videoid, chat_id, config.MUSIC_BOT_NAME):
+def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
