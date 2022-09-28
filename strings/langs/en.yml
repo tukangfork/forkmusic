@@ -81,6 +81,7 @@ start_4 : "Pemilik {0}[{1}] baru saja bergabung dengan obrolan Anda."
 start_5 : "Anggota Pengguna Sudo {0}[{1}] baru saja bergabung dengan obrolan Anda."
 start_6 : "❗️ **Diperlukan Supergroup** ️\n\nHarap ubah **grup** Anda menjadi **grup super** lalu tambahkan saya kembali.\n\n**Bagaimana cara membuat grup super?**\n✅ Jadikan riwayat obrolan grup Anda **terlihat** sekali."
 start_7 : "**Obrolan Daftar Hitam**\n\nObrolan Anda telah dimasukkan dalam daftar hitam oleh Bot. Silakan minta SudoUser untuk memasukkan obrolan ke daftar putih terlebih dahulu. Periksa [Sudolist dari sini]({0})"
+start_8 : "Halo, saya {0}"
 
 # Help
 help_1 : "Klik tombol di bawah untuk informasi lebih lanjut. Jika menemukan kendala, Anda dapat menghubungi pemilik bot atau bertanya di Grup dukungan.\n\nSemua perintah menggunakan : /"
