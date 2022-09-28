@@ -218,7 +218,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
                 callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
         ],
-        ]
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
