@@ -1,4 +1,4 @@
-import random
+import config
 
 from pyrogram.types import InlineKeyboardButton
 
@@ -110,8 +110,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ʳᵉᵖᵉᵃᵗ ↺  ◃◃  |◁  II  ▷|  ▹▹  ♡↠ⁿᵉˣᵗ ˢᵒⁿᵍ",
-                callback_data=f"PanelMarkup {videoid}|{chat_id}",
+                text=_["start_8"].format(config.MUSIC_BOT_NAME),
             ),
         ],
         [
