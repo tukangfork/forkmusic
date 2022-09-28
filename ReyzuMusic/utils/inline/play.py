@@ -356,7 +356,7 @@ def panel_markup_3(_, videoid, chat_id):
                 callback_data=f"ADMIN 3|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["PL_B_2"],
+                text=_["PL_B_17"],
                 callback_data=f"ADMIN 4|{chat_id}",
             ),
         ],
