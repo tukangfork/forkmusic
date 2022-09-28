@@ -168,7 +168,7 @@ def telegram_markup(_, chat_id):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+                text=_["CLOSE_BUTTON"], callback_data="close"
             ),
         ],
     ]
