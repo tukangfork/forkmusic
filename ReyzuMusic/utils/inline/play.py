@@ -1,5 +1,22 @@
+import random
+
 from pyrogram.types import InlineKeyboardButton
 
+selections = [
+    "▁▄▂▇▄▅▄▅▃▁▄",
+    "▁▃▇▂▅▁▄▇▄▅▃",
+    "▃▁▇▂▅▃▄▃▅",
+    "▃▄▂▄▇▅▃▁▄▅▁",
+    "▁▃▄▂▇▃▄▅▃",
+    "▃▁▄▂▅▃▁▄▇▃▅",
+    "▁▇▄▂▅▄▅▃▄▁▄",
+    "▁▃▅▇▂▅▄▁▄▃▇",
+    "▃▅▂▅▇▁▄▃▁▁▄",
+    "▇▅▂▅▃▁▄▄▃▁▃",
+    "▃▇▂▅▁▅▄▁▄▃▁",
+    "▅▄▇▂▅▂▄▁▄▇▁",
+    "▃▅▂▅▃▇▄▅▁▄▃",
+]
 
 ## After Edits with Timer Bar
 
@@ -28,7 +45,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     pos = int(y)
 
     line = "─"
-    circle = "♡"
+    circle = "●"
 
     bar = line*(pos-1)
     bar += circle
@@ -76,7 +93,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     pos = int(y)
 
     line = "─"
-    circle = "♡"
+    circle = "●"
 
     bar = line*(pos-1)
     bar += circle
@@ -144,6 +161,15 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
+                text=_["PL_B_19"], callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text=_["PL_B_20"],
+                callback_data=f"ADMIN Unmute|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text="⏸", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
@@ -159,7 +185,7 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_3"],
+                text=_["PL_B_18"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
