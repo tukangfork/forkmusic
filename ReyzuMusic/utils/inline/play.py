@@ -108,7 +108,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["start_8"],
+                text="00:00 ─────────── 0:00",
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
         ],
